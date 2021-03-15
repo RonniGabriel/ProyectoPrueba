@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import sun.security.krb5.internal.rcache.AuthTimeWithHash;
+
 public class metodos {
  
 	// public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class metodos {
 //}
 //}
  
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		
 
 		 
@@ -56,5 +58,23 @@ public class metodos {
 	}
 	
 	}
-}
+*/
+	
+	private static Scanner keyboard = new Scanner(System.in);
+	public static int numero1,intervalo,operacion;
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		operacion= numero1-intervalo;
+		System.out.println("Introduce un numero");
+		numero1 = keyboard.nextInt();
+		System.out.println("Introduce el valor del intervalo");
+		intervalo = keyboard.nextInt();
+		
+        for (int i=numero1;i>=0;i-=intervalo) {
+        
+        System.out.println("El conteo regresivo es: "+i);
+        
+        }
+	}
+}
